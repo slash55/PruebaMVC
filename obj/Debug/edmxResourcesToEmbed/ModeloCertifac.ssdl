@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Cer_Addendas_modelo.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Addendas">
+    <Key>
+      <PropertyRef Name="IdAddenda" />
+    </Key>
+    <Property Name="IdAddenda" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="NombreAddenda" Type="nvarchar" MaxLength="50" />
+    <Property Name="XML" Type="nvarchar(max)" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="Usuario" Type="varchar" MaxLength="50" />
+    <Property Name="Estado" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="Cer_Addendas_modeloStoreContainer">
+    <EntitySet Name="Addendas" EntityType="Self.Addendas" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

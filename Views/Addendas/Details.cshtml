@@ -1,0 +1,59 @@
+﻿@model PruebaMVC.Addendas
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Addendas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreAddenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreAddenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.XML)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.XML)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaModificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaModificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.IdAddenda }) |
+    @Html.ActionLink("Regresa a la Lista", "Index")
+</p>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Cer_Addendas_modeloStoreContainer" CdmEntityContainer="Cer_AddendasEntities1">
+    <EntitySetMapping Name="Addendas">
+      <EntityTypeMapping TypeName="Cer_Addendas_modelo.Addendas">
+        <MappingFragment StoreEntitySet="Addendas">
+          <ScalarProperty Name="IdAddenda" ColumnName="IdAddenda" />
+          <ScalarProperty Name="NombreAddenda" ColumnName="NombreAddenda" />
+          <ScalarProperty Name="XML" ColumnName="XML" />
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
